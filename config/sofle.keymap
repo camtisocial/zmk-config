@@ -39,15 +39,15 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE         &kp N1  &kp N2          &kp N3        &kp N4        &kp N5                                    &kp N6     &kp N7            &kp N8             &kp N9     &kp N0    &kp KP_PLUS
-&kp TAB           &kp Q   &kp W           &kp E         &kp R         &kp T                                     &kp Y      &kp U             &kp I              &kp O      &kp P     &kp BSPC
-&kp LEFT_CONTROL  &kp A   &kp S           &kp D         &kp F         &kp G                                     &kp H      &kp J             &kp K              &kp L      &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z   &kp X           &kp C         &kp V         &kp B      &kp C_MUTE    &kp PRINTSCREEN  &kp N      &kp M             &kp COMMA          &kp DOT    &kp FSLH  &kp BACKSLASH
-                          &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ALT  &kp SPACE  &kp LCMD      &kp ENTER        &kp SPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS
+&kp GRAVE                &kp N1  &kp N2          &kp N3        &kp N4        &kp N5                                  &kp N6     &kp N7            &kp N8             &kp N9     &kp N0    &kp KP_PLUS
+&kp TAB                  &kp Q   &kp W           &kp E         &kp R         &kp T                                   &kp Y      &kp U             &kp I              &kp O      &kp P     &kp BSPC
+&mt LEFT_CONTROL ESCAPE  &kp A   &kp S           &kp D         &kp F         &kp G                                   &kp H      &kp J             &kp K              &kp L      &kp SEMI  &kp SQT
+&kp LSHFT                &kp Z   &kp X           &kp C         &kp V         &kp B      &kp CAPS    &kp PRINTSCREEN  &kp N      &kp M             &kp COMMA          &kp DOT    &kp FSLH  &kp BACKSLASH
+                                 &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ALT  &kp SPACE  &kp LCMD    &kp ENTER        &kp SPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>,
                 <&inc_dec_kp UP_ARROW DOWN>;
         };
 
@@ -65,7 +65,7 @@
             bindings = <
 &trans     &kp F1     &kp F2     &kp F3    &kp F4    &kp F5                       &kp F6      &kp F7          &kp F8     &kp F9     &kp F10   &kp F11
 &kp GRAVE  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                       &kp N6      &kp UP_ARROW    &kp N8     &kp N9     &kp N0    &kp F12
-&trans     &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                    &kp LEFT    &kp DOWN_ARROW  &kp ASTRK  &kp LPAR   &kp RPAR  &kp PIPE
+&trans     &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                    &kp LEFT    &kp DOWN_ARROW  &kp RIGHT  &kp LPAR   &kp RPAR  &kp PIPE
 &trans     &kp EQUAL  &kp MINUS  &kp PLUS  &kp LBRC  &kp RBRC   &trans    &trans  &bt BT_NXT  &kp RBKT        &kp SEMI   &kp COLON  &kp BSLH  &trans
                       &trans     &trans    &trans    &trans     &trans    &trans  &trans      &trans          &trans     &trans
             >;
